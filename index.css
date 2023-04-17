@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200sdisplay=swap');
+
+
+*{    
+    font-family: var(--font-style);
+    background-color:#1C2A44;
+    scroll-behavior:smooth;
+    box-sizing: border-box; 
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+#nav-menu{
+    width: 98%;
+    margin: auto; 
+    display: flex;
+    position: fixed;
+    
+}
+
+.nav__toggle{
+
+    display: none;
+
+}
+
+#ul{
+    
+    width: 95%;
+    text-align: center;
+    margin: 20px auto; 
+    display: flex;
+    List-style: none;
+    padding: 15px 0;
+    border-radius: 25px;
+    border: 0.1px solid #099FFF;
+    background-color: #18181B;
+    box-shadow:0 4px 8px O #29f1f8, 0 6px 20px0 rgba(0,0,0,0.19);  
+
+}
+#ul a{
+    color: white;
+    text-decoration: none;
+}
+
+#ul li{
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    background-color: #18181B;
+    cursor: pointer;
+} 
+
+#ul li:hover{
+    transform:scale(1.1);
+}
+
+.nav__toggle>h1{
+    display: block;
+    text-align: start;
+    color: white;
+    font-size: 40px;
+}
+.nav__toggle>i{
+    text-align: end;
+    color: white;
+    font-size: xxx-large;
+   
+}
+/* *************************************************************** */
+#home{
+    width: 98%;
+    min-block-size: 100vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 60% 40%;
+   
+    margin-bottom: 5rem;
+}
+#intro{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: white;
+}
+
+
+#intro span{
+    color: white;
+    font-size: 75px;
+    transition: all .7s ease-in-out;
+    
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #099FFF; /* the color */
+    
+    color: #f5f0f000;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#f8f5f5 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+
+}
+#intro span:hover{
+    --_p: 100%
+}
+    
+
+.container {
+  
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .box {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin: 3rem;
+}
+.container .box:hover .imgBox {
+    transform: translate(-2.5rem, -2.5rem);
+    
+}
+.container .box:hover .content {
+    transform:translate(1.5rem, 1.5rem);
+}
+.imgBox{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:2;
+    transition: all 0.5s ease-in-out;
+    border: 0.5px solid #099FFF;
+    box-shadow:0 4px 8px O #29f1f8, 0 6px 20px0 rgba(0,0,0,0.19);
+    
+}
+.content{
+    background-color:#3a4e72;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    display: flex;
+    align-items: end;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    
+    
+}
+#text{
+    display: block;
+    color: white;
+    font-size:25px;
+    background-color:#3a4e72;
+    
+      
+}
+
+.imgBox img {
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    resize: both;
+   
+}
+
+/*********about**********************************************/
+#about{
+    block-size: 100%;
+    inline-size: 100%;
+    text-align: center;
+    background: hsl(204 100% 5%);
+    color: white;
+    min-block-size: 100vh;
+    min-inline-size: 100%;
+    padding: 5vmin;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    font-size: min(200%, 5vmin);
+}
+#about article{
+    background: radial-gradient(hsl(100 100% 60%),hsl(200 100% 60%)) fixed;
+    background: conic-gradient(hsl(100 100% 60%),hsl(200 100% 60%),hsl(100 100% 60%)) fixed;
+    
+}
+#about h1 {
+    font-size: 10vmin;
+
+
+    margin: auto;
+}
+  
+#about p {
+    font-family: "Dank Mono", ui-monospace, monospace;
+    margin-top: 1ch;
+
+    margin: auto;
+}
+
+
+
+@media only screen and (max-width: 650px) {
+    #ul{
+        display: none;
+    }
+
+    .nav__toggle{
+        display: block;
+        width: 95%;
+        height: 3rem;
+        margin: auto;
+        display: flex; 
+        border: #099FFF;
+    }
+    #home{
+        width: 98%;
+        margin: auto;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 85%;
+        grid-template-rows: 1fr 1fr ;
+        
+    }
+
+}
+
