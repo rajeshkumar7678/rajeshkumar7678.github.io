@@ -1,59 +1,383 @@
+<!-- 2963 x 3157 -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Rajesh</title>
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajesh kumar</title>
+    <script
+      src="https://kit.fontawesome.com/5d8d1b2757.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="index.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
+      href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
     />
-</head>
-<body>
-    <nav id="nav-menu">
-        <ul id="ul">
-            <li><a href="#home">Home</a> </li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="/Rajesh_kumar_Resume.pdf" download="Rajesh_kumar_Resume">Resume</a></li>
-        </ul>
-        <div class="nav__toggle" id="nav-toggle">
-            <h1>Rajesh</h1>
-            <i class="bx bx-menu"></i>
-        </div>
-
-
-    </nav>
-    <div id="home">
-        <div id="intro">
-            <h1 ><span >Rajesh Kumar</span> <br>
-            Full Stack web Developer(Node.js)</h1>
-        </div>
-        <div class="container">
-            <div class="box">
-                <div class="imgBox">
-                    <img src="./pic_0604_102610 (1)_2.png"  alt=""/>
-                </div>
-                <div class="content">
-                    <n2 id="text">Rajesh kumar<br>
-                    Software Engineer</h2>
-                </div>
+  </head>
+  <body>
+    <div id="container">
+      <div>
+        <img src="./img/813087.jpg" alt="Profile" />
+      </div>
+      <div>
+        <section id="section1">
+          <div id="navbar">
+            <div class="name_logo">
+              <h1>Rajesh<span >Kumar</span></h1>
             </div>
-        </div>
-        
-    </div>
-    <div id="about">
-        <article>
-            <h1>Scroll Contextual Conic Gradient Text</h1>
-            <p>text mask revealing "fixed to viewport" background gradient</p>
-        </article>
-    </div>
+            <div class="ham">
+              <div class="burger"></div>
+              <div class="burger"></div>
+              <div class="burger"></div>
+            </div>
+            <div class="title">
+              <div class="remove-active"><a href="#section1">Home</a></div>
+              <div class="remove-active"><a href="#section2">About</a></div>
+              <div class="remove-active"><a href="#section3">Skills</a></div>
+              <div class="remove-active"><a href="#section4">Projects</a></div>
+              <div class="remove-active"><a href="#section5">Contact</a></div>
+              <div class="remove-active"><a href="Rajesh_kumar_Resume.pdf" download>Resume</a></div>
+            </div>
+          </div>
+          <div class="about-section">
+            <div id="imgbox"><img src="pic_0604_102610 (1)_2.png" alt="" /></div>
+            <div id="briefinfo">
+              <h1 id="h1">Hi, <span id="name">I am Rajesh</span></h1>
+              <div class="console-container">
+                <span id="text">A Full Stack Developer</span>
+                <!-- <div class="console-underscore" id="console">&#8739;</div> -->
+                <div class="console-underscore" id="console"></div> 
+              </div>
+              <button id="resumelink"><a href="Rajesh_kumar_Resume.pdf" download target="_blank"><span>Resume</span></a></button>
+            </div>
+          </div>
+        </section>
 
-    
-</body>
-<script src="./index.js"></script>
+        <!-- ---------------------------aboutme-----------------------------------------
+                    ---------------------------------------------------------------------------------
+                    ----------- -->
+
+        <section id="section2" class="slideup" onload="document.body.style.opacity='1'">
+          <div id="aboutme" >
+            <h1 class="glow">ABOUT <span style="color: #135d7d">ME</span></h1>
+            <div id="aboutme-box">
+              <p>
+                Hi! ,I am <span>Rajesh Kumar</span> <br />
+
+              </p>
+              <p>
+                A B.Sc (Mathematical Science with CS) graduate, love to coding and exploring new things
+                <br /><br />
+                Currently, learning new skills remotely like web development
+                and NodeJs back-end in Masai school, Bengaluru, and seeking a
+                job that compliments my expertise. 
+              </p>
+              <div>
+                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">
+                  <i class="fa-solid fa-envelope icon" ></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rajesh-kumar-99a67524b/" target="_blank">
+                  <i class="fa-brands fa-linkedin-in icon"></i>
+                </a>
+                <a href="https://github.com/rajeshkumar7678" target="_blank">
+                  <i class="fa-brands fa-github icon"></i>
+                </a>
+                <!-- <a href="">
+                  <i class="fa-solid fa-phone icon"></i>
+                </a> -->
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--- --------------------------tech stack-----------------------------
+                    ---------------------------------------------------------------------- -->
+        <section id="section3" class="slideup">
+          <div id="proficiency" >
+            <h1 class="glow">
+              <span style="color: #135d7d">MY</span> PROFICIENCIES
+            </h1>
+            <div id="proficiency_icon">
+            
+              <div class="p_icon">
+                <img src="./img/html.png" alt="" />
+                <h3>HTML</h3>
+              </div>
+              <div class="p_icon">
+                <img src="./img/css-3.png" alt="" />
+                <h3>CSS</h3>
+              </div>
+              <div class="p_icon">
+                <img src="./img/java-script (1).png" alt="" />
+                <h3>Javascript</h3>
+              </div>
+              <div class="p_icon">
+                <img src="./img/java.png" alt="" />
+                <h3>JAVA</h3>
+              </div>
+              <div class="p_icon">
+                <img src="./img/github.png" alt="" />
+                <h3>Github</h3>
+              </div>
+              <div class="p_icon">
+                <img
+                  style="width: 50px; margin-top: 23px; margin-bottom: 23px"
+                  src="./img/netlify.png"
+                  alt=""
+                />
+                <h3>Netlify</h3>
+              </div>
+              <div class="p_icon">
+                <img
+                  style="width: 55px; margin-top: 23px; margin-bottom: 23px"
+                  src="./img/icons8-node-js.svg"
+                  alt=""
+                />
+                <h3>Node.Js</h3>
+              </div>
+              <div class="p_icon">
+                <img
+                  style="width: 55px; margin-top: 23px; margin-bottom: 23px"
+                  src="./img/socketio-icon.svg"
+                  alt=""
+                />
+                <h3>Socket.io</h3>
+              </div>
+              <div class="p_icon">
+                <img
+                  style="width: 50px; margin-top: 23px; margin-bottom: 23px"
+                  src="./img/postman.png"
+                  alt=""
+                />
+                <h3>Postman</h3>
+              </div>
+              <div class="p_icon">
+                <img
+                  style="width: 55px; margin-top: 23px; margin-bottom: 23px"
+                  src="./img/mongodb-icon.svg"
+                  alt=""
+                />
+                <h3>MongoDB</h3>
+              </div>
+            </div>
+          </div>
+          <div class="parentstats">
+            <div class="stats slideup" >
+              <p align="center">
+                <a href="https://github.com/rajeshkumar7678/github-readme-streak-stats">
+                  <img title="🔥 Get streak stats for your profile at git.io/streak-stats" alt="rajeshkumar7678 streak" src="https://github-readme-streak-stats.herokuapp.com/?user=rajeshkumar7678&hide_border=true&theme=react&hide_border=true&bg_color=0D1117"/>
+                <a>
+              <p>  
+            </div>
+            <div class="stats slideup" >
+              <p align="center">
+                <a href="https://github.com/rajeshkumar7678/github-readme-stats">
+                  <img alt="rajeshkumar7678 Github Stats" src="https://github-readme-stats.vercel.app/api?username=rajeshkumar7678&show_icons=true&locale=en&theme=react&hide_border=true&bg_color=0D1117" alt="rajeshkumar7678" />
+                </a>
+              </p> 
+            </div>
+            <div class="calendar stats slideup" style="margin-top: 6%;">
+              Loading the data just for you.
+            </div>
+          </div>
+        </section>
+
+        <!--------------------------projects-----------------------------
+                    --------------------------------------------------------------------  -->
+
+        <section id="section4" class="slideup">
+          <div id="project-start">
+            <h1 class="glow">
+              <span style="color: #135d7d">MY</span> PROJECTS
+            </h1>
+
+            <div class="project-">
+              <div class="imgclass">
+                <img src="https://user-images.githubusercontent.com/119392762/229989487-ece5010c-0c33-46b5-ab2e-94c53b4bb159.png" alt="" />
+              </div>
+              <div class="blur"></div>
+              <div class="slide right">
+                <div>
+                  <div class="slido1">
+                    <h2>HealthyDot.com</h2>
+                    <div class="githublink">
+                      <a href="https://github.com/rajeshkumar7678/dizzy-straw-8862" target="_blank"
+                        ><i class="fa-brands fa-github "></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p>This Frontend project is the clone of Timely website ,world's first AI-powered time tracking and planning tool ,developed by Memory.
+                  </p>
+                  <div class="techstack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                  </div>
+                  <div class="worklink">
+                    <a href="https://assorted-dinner.netlify.app/" target="_blank"><button class="button" style="vertical-align:middle"><span>View work </span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="project-">
+              <div class="slide left">
+                <div>
+                  <div class="slido1">
+                    <h2>Cabmate</h2>
+                    <div class="githublink">
+                      <a href="https://github.com/alka1520/Cabmate" target="_blank"
+                        ><i class="fa-brands fa-github "></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p>
+                    We have developed this RESTful webservice for an Online Cab Booking application. This API performs all the fundamental CRUD operations of any Online Cab Booking platform with user validation at every step.                  </p>
+                  <div class="techstack">
+                    <div>JAVA</div>
+                    <div>MySQL</div>
+                    <div>Hibernate</div>
+                    <div>Springboot</div>
+                  </div>
+                  <div class="worklink" id="leftside">
+                    <a href="https://drive.google.com/file/d/1kZD4eY9hIGPH28kcdRtwHmrVDiWz6V0A/view?usp=share_link" target="_blank"><button class="button" style="vertical-align:middle"><span>Presentation </span></button></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="imgclass imgone">
+                <img src="./img/Online-Cab-Booking-App-logo.png" alt="" />
+              </div>
+            </div>
+<!-- 
+            <div class="project-">
+              <div class="slide left">
+                <div>
+                  <div class="slido1">
+                    <h2>OLX.com</h2>
+                    <div class="githublink">
+                      <a href="https://github.com/tarique076/OLX_Clone" target="_blank"
+                        ><i class="fa-brands fa-github "></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p>
+                    The OLX consumer brand originated as online exchange in 2006 ,this is a C-to-C e-commerce website ,which allow users to buy and sell used products.
+                  </p>
+                  <div class="techstack">
+                    <div>HTML</div>
+                    <div>CSS</div>
+                    <div>JS</div>
+                  </div>
+                  <div class="worklink" id="leftside">
+                    <a href="https://voluble-bombolone-fdb49d.netlify.app/" target="_blank"><button class="button" style="vertical-align:middle"><span>View work </span></button></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="imgclass imgone">
+                <img src="./img/Screenshot (141).png" alt="" />
+              </div>
+            </div> -->
+
+            <div class="project-">
+              <div class="imgclass">
+                <img src="./img/ER diagrams.png" alt="" />
+              </div>
+
+              <div class="slide right">
+                <div>
+                  <div class="slido1">
+                    <h2>BusTicketBookingApp</h2>
+                    <div class="githublink">
+                      <a href="https://github.com/alka1520/BusTicketBookingApp" target="_blank"
+                        ><i class="fa-brands fa-github "></i>
+                      </a>
+                    </div>
+                  </div>
+                  <p>
+                    BusTicketBookingApp is a console based application created with the help of MySQL software. This application consist two kind of users ,Admin ,having the authority to perform CRUD operation and User, who can Book ticket . 
+                  </p>
+                  <div class="techstack">
+                    <div>MySQL</div>
+                    <div>JAVA</div>
+                    <div>JDBC</div>
+                  </div>
+                  <div class="worklink">
+                    <a href="https://drive.google.com/file/d/1oZsTM1TcElWVe_jsPsQ5PwxhkEiAKs4L/view?usp=sharing" target="_blank"><button class="button" style="vertical-align:middle"><span>Presentation</span></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- --------------------------------------contact------------------------------------------
+                -------------------------------------------------------------------------------------------- -->
+
+        <section id="section5" class="slideup">
+          <div class="contact" id="contact">
+            <div id="abc">
+              <h1>Have any project in your mind?</h1>
+              <h1
+                style="text-align: left; color: rgb(190, 190, 190)"
+                class="glow"
+              >
+                CONTACT <span style="color: #135d7d">ME</span>
+              </h1>
+              <button><a href="Rajesh_kumar_Resume.pdf" download target="_blank">Resume</a></button>
+            </div>
+            <div id="def">
+              <div class="contactlogo">
+                <div>
+                  <img style="width: 40px" src="./img/email.png" alt="" /><a
+                    href="" target="_blank"
+                  ></a>
+                </div>
+                <div>
+                  <h4>
+                    <span style="color: white">mr.rajeshkumar7678@gmail.com</span>
+                  </h4>
+                </div>
+              </div>
+              <div class="contactlogo">
+                <div>
+                  <a
+                    href="https://www.linkedin.com/in/rajesh-kumar-99a67524b/" target="_blank"
+                  ><img style="width: 40px" src="./img/linkedin.png" alt="" />
+                  </a>
+                </div>
+                <div><h4><a href="https://www.linkedin.com/in/rajesh-kumar-99a67524b/" target="_blank">Linkedin</a> </h4></div>
+              </div>
+              <div class="contactlogo">
+                <div>
+                  <a href="https://github.com/rajeshkumar7678" target="_blank"
+                    ><img style="width: 40px" src="./img/github.png" alt=""
+                  /></a>
+                </div>
+                <div>
+                  <h4><a href="https://github.com/rajeshkumar7678" target="_blank">Github</a></h4>
+                </div>
+              </div>
+              <div class="contactlogo">
+                <div>
+                  <a href="" 
+                    ><img style="width: 40px" src="./img/phone-call (1).png" alt=""
+                  /></a>
+                </div>
+                <div>
+                  <h4><a href="https://github.com/rajeshkumar7678" target="_blank">+91-7678215319</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="iconsticky">
+          <a href="#section1"><i class="fa-solid fa-arrow-up"></i></a>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+  </body>
 </html>
+<script src="index.js"></script>
