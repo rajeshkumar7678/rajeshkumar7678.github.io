@@ -157,6 +157,7 @@ body {
 }
 .home-img img {
   width: 35vw;
+  
   animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage {
@@ -413,6 +414,11 @@ span {
   }
   .projectlinks {
     display: flex;
+
+  }
+
+  .projectlinks a{
+    text-align: center;
   }
    
   /*-----------------------------------*\
@@ -699,6 +705,7 @@ span {
 }
 .home-img {
   width: 70vw;
+
   margin-top: 4rem;
 }
 .about {
