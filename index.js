@@ -1,84 +1,74 @@
-// *=============================== toggle icon navbar ==================================
+$(document).ready(function(){
+  $(window).scroll(function(){
+      if(this.scrollY > 20){
+          $('#main-nav').addClass("sticky");
+      }else{
+          $('#main-nav').removeClass("sticky");
+      }
+      
+  })
 
-let menuIcon = document.querySelector('#menu-icon');
-let navbar = document.querySelector('#nav-menu')
-
-menuIcon.onclick = () => {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active')
-};
-
-// *=============================== github calender ==================================
-    GitHubCalendar(".calendar", "rajeshkumar7678");
-
-    // or enable responsive functionality:
-    GitHubCalendar(".calendar", "rajeshkumar7678", { responsive: true });
-
-// *=============================== resume open in new tab ==================================
-
-
-    let resume1 = document.getElementById("resume-button-1").addEventListener("click", NewTab)
-    let resume2 = document.getElementById("resume-button-2").addEventListener("click", NewTab)
-
-    function NewTab() {
-      window.open(
-        "https://drive.google.com/file/d/1wqVJANRNOQ0r1ClyHwGO0vOaf-ZDhfBR/view?usp=sharing",
-        "_blank"
-      );
-    }
-
-// *=============================== scroll sections active link ==================================
-let sections = document.querySelectorAll('section');
-let navlinks = document.querySelectorAll('header nav a')
-
-window.onscroll = () => {
-  sections.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    let id = sec.getAttribute('id');
-
-    if(top >= offset && top < offset + height) {
-        navlinks.forEach(links => {
-          links.classList.remove('active');
-          document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
-        });
-    };
-
+  // togel/menu nevbar script
+  $('.menu-btn').click(function(){
+      $('#main-nav .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
   });
-  // *=============================== sticky navbar ==================================
-   
-  let header = document.querySelector('header');
 
-  header.classList.toggle('sticky', window.scrollY > 100);
+  $('.menu li a').click(function(){
+      $('#main-nav .menu').toggleClass("active");
+      $('.menu-btn i').toggleClass("active");
+  });
 
-// *=============================== remove toggle icon and navbar when click navbar link(scroll) ==================================
+  //   typing animation script 
+     var typed = new Typed (".panku",{
+      strings:["Full-Stack Web-Developer", "Node-js Backend Devloper"],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+     })
 
-menuIcon.classList.remove('bx-x');
-navbar.classList.remove('active')
 
-};
+     var typed = new Typed (".panku2",{
+      strings:["Full-Stack Web-Developer", "Node-js Backend Devloper"],
+      typeSpeed:100,
+      backSpeed:60,
+      loop:true
+     });
 
-// *=============================== scroll reveal ==================================
+  // owl carousel script
+  $('.carousel').owlCarousel({
+       margin:20,
+       loop:true,
+       autoplayTimeOut:2000,
+       autoplayHoverPause:true,
+       responsive:{
+          0:{
+              items:1,
+              nav:false
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:false
+          }
+       }
+  })
 
-ScrollReveal({
-  // reset: true,
-  distance: '80px',
-  duration: 2000,
-  delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin:'top'});
-ScrollReveal().reveal('.home-img, .skills-container, .project-card, .contact form', { origin:'bottom'});
-ScrollReveal().reveal('.home-content h1', { origin:'left'});
-ScrollReveal().reveal('.home-content p, .about-content', { origin:'left'});
+// resume section 
 
-// *===============================  typed js==================================
+document.getElementById("resume-link-1").onclick = () => {
+  window.open(
+    "https://drive.google.com/file/d/1wqVJANRNOQ0r1ClyHwGO0vOaf-ZDhfBR/view?usp=sharing"
+  );
+};
 
-const typed = new Typed('.multiple-text', {
-  strings: ['Full Stack Web Developer', 'Backend Developer', 'Frontend Developer'],
-  typeSpeed: 100,
-  backSpeed: 100,
-  backdelay: 1000,
-  loop: true
-})
+document.getElementById("resume-link-2").onclick = () => {
+  window.open(
+    "https://drive.google.com/file/d/1wqVJANRNOQ0r1ClyHwGO0vOaf-ZDhfBR/view?usp=sharing"
+  );
+};
