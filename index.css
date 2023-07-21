@@ -237,12 +237,16 @@ section .title::after{
 .about .about-content .left{
     width: 30%;
     margin: auto;
+    filter:drop-shadow(10px 10px 30px blue)
+    
 }
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 200px 200px;
+    filter: brightness(110%);
+    
 }
 .about .about-content .right{
     width: 60%;
