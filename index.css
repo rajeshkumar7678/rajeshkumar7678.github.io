@@ -482,10 +482,23 @@ section .title::after{
     margin-bottom: 7%;
     border: 2px #000b70;
 }
-#raj-cal{
-    width: 100%;
-    margin: auto;
-}
+.react-activity-calendar {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  .react-activity-calendar img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Additional styles for centering the calendar */
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed to center the content vertically */
+  }
 
 /* contect sectin css start hare */
 
