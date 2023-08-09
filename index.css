@@ -482,6 +482,10 @@ section .title::after{
     margin-bottom: 7%;
     border: 2px #000b70;
 }
+#raj-cal{
+    width: 100%;
+    margin: auto;
+}
 
 /* contect sectin css start hare */
 
